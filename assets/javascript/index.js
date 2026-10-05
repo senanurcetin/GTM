@@ -19,6 +19,7 @@ const listenToAdd = (buttons) => {
         item: { id, name, price },
         location: location
       })
+      GA4Events.push(dataLayer, GA4Events.addToCart({ id, name, price }))
     })
   })
 }
@@ -38,6 +39,7 @@ const cartItemsListeners = () => {
         quantity: -parseInt(quantity),
         location: 'cart',
       })
+      GA4Events.push(dataLayer, GA4Events.removeFromCart({ id, name, price }, quantity))
     })
   })
 
@@ -51,6 +53,7 @@ const cartItemsListeners = () => {
         item: { id, name, price },
         location: 'cart',
       })
+      GA4Events.push(dataLayer, GA4Events.removeFromCart({ id, name, price }, 1))
     })
   })
 }
@@ -105,6 +108,7 @@ checkoutButton.addEventListener('click', (event) => {
     totalPrice: cartLS.total(),
     totalQuantity: cartLS.list().reduce((prev, curr) => prev + curr.quantity, 0)
   })
+  GA4Events.push(dataLayer, GA4Events.beginCheckout(cartLS.list()))
   cartLS.destroy()
   const modal = bootstrap.Modal.getInstance('#cartModal')
   modal.hide()

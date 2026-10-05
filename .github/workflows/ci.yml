@@ -23,3 +23,18 @@ jobs:
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
+
+  ga4-events:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Test GA4 event payloads
+        run: node --test tests/*.test.js
