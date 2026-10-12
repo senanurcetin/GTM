@@ -1,5 +1,10 @@
 # GTM ToyStore — GA4 E-commerce Event Instrumentation
 
+![ToyStore Analytics workflow diagram](docs/gtm-event-pipeline.svg)
+
+> Conceptual event flow rather than a live GA4 report. The storefront does not process real payments.
+
+
 **Jekyll · Google Tag Manager · GA4 dataLayer events · JavaScript unit tests**
 
 A reproducible **web analytics instrumentation prototype** for a static storefront. It demonstrates structured browser events for common commerce interactions and a tested GA4-compatible event layer; it does not operate a live payment or order backend.
