@@ -11,6 +11,8 @@ A reproducible **web analytics instrumentation prototype** for a static storefro
 
 [Event contract and examples](docs/GA4_EVENTS.md) · [CI checks](https://github.com/senanurcetin/GTM/actions/workflows/ci.yml)
 
+**Reviewer quick brief:** [Problem, evidence and boundaries](docs/hiring-summary.md).
+
 ## Why this project exists
 
 This repository packages a simple toy-store storefront in Jekyll so product pages, contact flow, and front-end structure can be used for tag-management and analytics experiments.
