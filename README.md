@@ -1,14 +1,14 @@
-# GTM ToyStore Analytics Integration
+# GTM ToyStore — GA4 E-commerce Event Instrumentation
 
-Archive proof for a static storefront with a Google Tag Manager container snippet, dataLayer events and a tested GA4 e-commerce event layer.
+**Jekyll · Google Tag Manager · GA4 dataLayer events · JavaScript unit tests**
+
+A reproducible **web analytics instrumentation prototype** for a static storefront. It demonstrates structured browser events for common commerce interactions and a tested GA4-compatible event layer; it does not operate a live payment or order backend.
+
+[Event contract and examples](docs/GA4_EVENTS.md) · [CI checks](https://github.com/senanurcetin/GTM/actions/workflows/ci.yml)
 
 ## Why this project exists
 
 This repository packages a simple toy-store storefront in Jekyll so product pages, contact flow, and front-end structure can be used for tag-management and analytics experiments.
-
-## Portfolio role
-
-`archive proof`
 
 ## What it shows
 
